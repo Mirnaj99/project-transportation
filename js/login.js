@@ -1,4 +1,4 @@
-$(document).ready(function() {             $('#loginModal').modal('show');
+$(window).ready(function() {             $('#loginModal').modal('show');
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })

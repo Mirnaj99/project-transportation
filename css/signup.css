@@ -1,6 +1,8 @@
 .register{
     background: -webkit-linear-gradient(left, #528cf7, #FFA673);
-    margin-top: 3%;
+    margin-top: 2%;
+   width: 100%;
+   height: 100%;
     padding: 3%;
 }
 .register-left{
@@ -30,6 +32,7 @@
     border-top-left-radius: 50% 90%;
     border-bottom-left-radius: 50% 90%;
     border-left:#7777778a dashed 5px;
+   
 }
 .register-left img{
     margin-top: 15%;

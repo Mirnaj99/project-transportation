@@ -26,7 +26,7 @@
     <div class="container-fluid">
       
       <div class="mx-auto order-0">
-        <a class="navbar-brand mx-auto" href="main.html">Navbar 2</a>
+        <a href="main.html"> <img src="../images/body/logo.png" style="width: 8rem ; padding: 0;" class="navbar-brand mx-auto" ></a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,13 +34,13 @@
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Station And Tickets</a>
+            <a class="nav-link" href="list.html">Station And Tickets</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about-us.html">About us</a>
@@ -152,20 +152,20 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <span class="form-label">From</span>
-                                        <input class="form-control" type="text" placeholder="City or Town">
+                                        <input class="form-control" type="text" required placeholder="City or Town">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <span class="form-label">To</span>
-                                        <input class="form-control" type="text" placeholder="City or Town">
+                                        <input class="form-control" type="text" required placeholder="City or Town">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <span class="form-label">Departing</span>
+                                        <span class="form-label">Departing Date</span>
                                         <input class="form-control" type="date" required>
                                     </div>
                                 </div>
@@ -188,7 +188,7 @@
                                         
                                         <div class="col-md-6">
                                         <div class="form-btn">
-                                        <button class="submit-btn">Show Trips</button>
+                                        <a href="list.html"><button class="submit-btn">Show Trips</button></a>
                                         </div>
                                     </div>
                                     
@@ -247,6 +247,7 @@
                       <p class="p1 text-muted" >Up To 3o people</p>
                       <p class="p1 text-muted" >Only 10$</p>
                       </div> <button alt="book now" class="fas fa-arrow-right"></button>
+                      
               </div>
           </div>
           <div class="col2 me-md-4 mb-md-0 mb-5">
@@ -272,15 +273,15 @@
                   <p class="p1 text-muted" >Up To 3o people</p>
                   <p class="p1 text-muted" >Only 10$</p>
                   </div>
-                  <button class="fas fa-arrow-right"></button>
+                  <button  class="fas fa-arrow-right"></button>
               </div>
           </div>
       </div>
       <div class="col4">
-          <div class="content"> <span class="h-6">Services</span>
+          <div class="content"> <span class="h-6">Station And Tickets</span>
               <p class=" h3 mb-4">Find Your Station</p>
               <p class="text-muted mb-4">For us, it’s not just about getting you from point A to point B. It’s about creating an experience that moves you.</p>
-              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+              <p><a href="list.html" class="btn btn-primary">Learn More</a></p>
           </div>
       </div>
   </div>
@@ -340,9 +341,9 @@
         <div class="col-md">
           <ul class="list-unstyled nav-links">
             <li><a href="main.html">Home</a></li>
-            <li><a href="main.html">Station and Tickets</a></li>
+            <li><a href="list.html">Station and Tickets</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
             <li><a href="about-us.html">About Us</a></li>
           </ul>
         </div>
@@ -354,22 +355,15 @@
             <li><a href="#">Partners</a></li>
           </ul>
         </div>
-        <div class="col-md text-md-center">
-          <ul class="social list-unstyled">
-            <li><a href="www.instagram.com"><span class="icon-instagram"></span></a></li>
-            <li><a href="#"><span class="icon-twitter"></span></a></li>
-            <li><a href="#"><span class="icon-facebook"></span></a></li>
-            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-            <li><a href="#"><span class="icon-dribbble"></span></a></li>
-          </ul>
-         
+        <div class="col-md">
+          <img src="../images/body/logo.png" style="width: 20rem; margin-top: -2rem;">
         </div>
       </div> 
 
       <div class="row ">
         <div class="col-12 text-center">
           <div class="copyright mt-5 pt-5">
-            <p><small>&copy; 2021-2022 All Rights Reserved.</small></p>
+            <p class="copyrighttext"><small>&copy; 2021-2022 All Rights Reserved.</small></p>
           </div>
         </div>
       </div> 
@@ -378,18 +372,13 @@
 </footer>
 
 
-    <!-- jQuery -->
-    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-    <!-- Popper JS -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
-    <!-- Bootstrap JS -->
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
-     <!-- Custom Scriptt -->    
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" ></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script  src="../js/login.js"></script>
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<!-- Popper JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+<!-- Bootstrap JS -->
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Custom Script -->      
+   
 </body>
 </html>

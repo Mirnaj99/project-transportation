@@ -6,8 +6,9 @@
     /*background-color: rgba(245, 245, 245, 0.897);*/
     width:90%;
     
-    margin: 2rem;
-    border-top: 0.1px solid rgba(117, 117, 117, 0.404) ;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    border-top: 0.1px solid rgba(117, 117, 117, 0.199) ;
 }
 
 

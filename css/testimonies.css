@@ -5,15 +5,15 @@
     align-items: center;
     background-color:#fffefe  ;
     font-family: 'Open Sans';
-    margin:5rem;
+   
  
 }
 
 #demo {
-    background: linear-gradient(to bottom, #ffffff , #eeeeee ) ;
+    background: transparent;
     max-width: 900px;
     margin: auto;
-    box-shadow: rgb(177, 177, 177) 8px 6px 2px 0px;
+   
 }
 
 .carousel-caption {
@@ -96,11 +96,16 @@
     background-color: #528cf7 ;
     opacity: 0.8;
     padding: 1rem;
+    border-radius: 50%;
+    transform: scale(0.8);
 }
 .fa-arrow-right {
     background-color: #528cf7 ;
     opacity: 0.8;
     padding: 1rem;
+    border-radius: 50%;
+    transform: scale(0.8);
+
 }
 .fa-arrow-left:hover{
    background-color: #FFA673;
@@ -109,4 +114,8 @@
 .fa-arrow-right:hover{
     background-color: #FFA673;
     opacity: 1;
+ }
+ .testimonies{
+     margin-top:2rem !important;
+     margin-bottom:4rem !important;
  }

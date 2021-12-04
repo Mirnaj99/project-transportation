@@ -5,7 +5,8 @@
     box-sizing: border-box;
     
   }
-  
+ 
+
 .img-fluid{
   
     /* The image used */
@@ -41,4 +42,14 @@
     color:#818181;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
+}
+.container-top{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 4rem 4rem;
+}
+.about-us{
+  margin-top: 1rem !important;
 }
