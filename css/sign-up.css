@@ -1,0 +1,126 @@
+body{
+    
+    
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: rgb(83, 83, 83);
+  }
+  *{
+    box-sizing: border-box;
+}
+  .x{
+      display: flex;
+      flex-direction: row;
+  }
+
+.main{
+      display: flex;
+      flex-direction: row;
+      margin: 5%;
+      background-image: url('wall.jpg') ;
+      background-size: 100% 100%;
+      border-radius: 20px;
+      border-right: rgba(128, 128, 128, 0.445) solid 10px;
+      border-bottom: rgba(128, 128, 128, 0.445) solid 5px;
+      
+  }
+
+.left-container{
+display:flex;
+flex-direction:column;
+width:10%;
+margin:5%;
+padding:7%;
+align-items: center;
+justify-content: center;
+}
+
+.login{
+    margin-top: 50%;
+    background-color: white;
+    border-radius: 15px;
+    color:rgb(83, 83, 83) ;
+    width:100px;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    border-color: rgba(140, 192, 252, 0.726);
+    
+}
+.welcome{
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+
+.info{
+    font-size: 20px;
+    margin-top: 10%;
+    
+}
+   
+
+.right-container{
+    margin: 5%;
+    display:flex;
+    flex-direction: column;
+   background-color: rgba(245, 245, 245, 0.466);
+    width:100%;
+    padding:5%;
+    border-radius: 10px 10px 80px 10px;
+   
+}
+.register  {
+     margin-top: 10%;
+background-color: white;
+border-radius: 15px;
+color:rgb(83, 83, 83) ;
+width:100px;
+height: 40px;
+text-align: center;
+font-size: medium;
+border-color: rgba(214, 213, 213, 0.747);
+font-weight: bold;
+align-self: center;
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2%;
+    
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    
+
+}
+.details{
+    height: 40px;
+    margin: 7px;
+    border-radius: 5px;
+    border-color: rgba(245, 245, 245, 0.466);
+
+}
+
+.questions{
+    height: 48px;
+    margin: 5px;
+    border-radius: 5px;
+    color: rgb(68, 68, 68);
+    border-color: rgba(190, 190, 190, 0.699);
+
+}   
+
+input[type="text"],[type="password"], [type="select"]
+{
+    padding-left: 10px;
+
+}
+.gender{
+   
+    margin-top:3%;}
+
+

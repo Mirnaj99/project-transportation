@@ -1,0 +1,58 @@
+
+body{
+
+  color:rgb(78, 78, 78);
+}
+
+.container {
+  padding: 2rem 0rem;
+  
+}
+.btn-info{
+background-color: transparent;
+
+}
+.btn-round {
+  background-color: #73CBFF;
+    border-color: #73CBFF;
+    color: rgb(255, 255, 255);
+    font-size: large bold;
+    font-size: medium;
+    
+}
+.btn-secondary{
+  background-color: gray;
+  border-color: gray; 
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+.modal-header .close {
+  margin-top: -1.5rem;
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
