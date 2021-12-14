@@ -27,3 +27,16 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+fetch('showStudents.php').then(data=> data.json())
+.then(response => {
+    console.log(response);
+    let output = '';
+    for(r in response){
+        output +=`  
+            <tr>
+                <td>${response[r].id}</td>
+                <td>${response[r].fname} ${response[r].lname}</td>
+            </tr> `;
+    }
+    document.querySelector('#studentsTable').innerHTML = output;
+}).catch(error => console.log(error));

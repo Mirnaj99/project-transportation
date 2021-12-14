@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 4 Login Modal Example</title>
+    <title>Sign up</title>
     <!-- Bootstrap CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <!-- Font Awesome CSS -->
@@ -13,7 +13,7 @@
 	<!-- script -->
     
     <link rel="stylesheet" href="../css/login.css">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <!------ Include the above in your HEAD tag ---------->
   </head>
   <body>
@@ -76,55 +76,50 @@
                          
                           <div class="tab-content" id="myTabContent">
                               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                             
+                          
+                               
+                
                               
+                                       
+
                                   <div class="row register-form">
+                                  
+                               
                                       <div class="col-md-6">
+                                      <div class="alert alert-danger" role="alert" id="errormsg"> </div>
+                                      <form>
+                                     
+                                      
                                           <div class="form-group">
-                                              <input type="text" class="form-control" placeholder="First Name *" value="" required/>
+                                              <input type="text" id="name" name="name" class="form-control" placeholder="Full Name *" value="" required/>
                                           </div>
                                           <div class="form-group">
-                                              <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                            <input type="text" id="username" name="username" class="form-control" placeholder="UserName *" value="" required/>
+                                        </div>
+                                          <div class="form-group">
+                                              <input type="password" id="signuppassword" name="signuppassword" class="form-control" placeholder="Password *" value="" />
                                           </div>
                                           <div class="form-group">
-                                              <input type="password" class="form-control" placeholder="Password *" value="" />
+                                              <input type="password" id="re_password"  name="re_password"  class="form-control"  placeholder="Confirm Password *" value="" />
                                           </div>
-                                          <div class="form-group">
-                                              <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
-                                          </div>
-                                          <div class="form-group">
-                                              <div class="maxl">
-                                                  <label class="radio inline"> 
-                                                      <input type="radio" name="gender" value="male" checked>
-                                                      <span> Male </span> 
-                                                  </label>
-                                                  <label class="radio inline"> 
-                                                      <input type="radio" name="gender" value="female">
-                                                      <span>Female </span> 
-                                                  </label>
-                                              </div>
-                                          </div>
+                                        
                                       </div>
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                              <input type="text" id="signupemail" name="signupemail" class="form-control" placeholder="Your Email *" value="" />
                                           </div>
                                           <div class="form-group">
-                                              <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
-                                          </div>
-                                          <div class="form-group">
-                                              <select class="form-control">
-                                                  <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
-                                                  <option>What is your Birthdate?</option>
-                                                  <option>What is Your old Phone Number</option>
-                                                  <option>What is your Pet Name?</option>
-                                              </select>
-                                          </div>
-                                          <div class="form-group">
-                                              <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
-                                          </div>
-                                          <input type="submit" class="btnRegister"  value="Register"/>
+                                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Your Phone *" value="" />
+                                        </div>
+                                        
+                                         
+                                         
+                                          <input type="submit" id="signup" class="btnRegister"  value="Register"/>
                                       </div>
+                                          
                                   </div>
+                                </form>
                               </div>
                               
                           </div>
@@ -140,6 +135,7 @@
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/signup.js"></script>
    <!-- Custom Script -->      
 
               
