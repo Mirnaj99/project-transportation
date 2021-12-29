@@ -24,12 +24,12 @@ ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_WARNING);
 		echo '<p>Email is required</p>';
 	    ;}
 		else if (!filter_var($signupemail, FILTER_VALIDATE_EMAIL)) {
-			echo("Invalid email format");	}
+			echo("<p>Invalid email format</p>");	}
 			//strong password
 			
 		
 	else if(empty($signuppassword)){
-        echo("Password is required");
+        echo("<p>Password is required</p>");
 	    ;
 	}
 	$uppercase = preg_match('@[A-Z]@', $signuppassword);
@@ -38,27 +38,27 @@ ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_WARNING);
 			$specialChars = preg_match('@[^\w]@', $signuppassword);
 			
 		if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($signuppassword) < 8) {
-				echo("Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character.");	 ;
+				echo("<p>Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character.</p>");	 ;
 			}
 	else if(empty($re_password)){
-        echo("Re Password is required");
+        echo("<p>Re Password is required</p>");
 	    ;
 	}
 
 	else if(empty($name)){
-        echo("Name is required");
+        echo("<p>Name is required</p>");
 	    ;}
-		else if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) { echo("Only letters and white space allowed in Name");}
+		else if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) { echo("<p>Only letters and white space allowed in Name</p>");}
        
 		else if($signuppassword !== $re_password){
-            echo("The confirmation password  does not match");
+            echo("<p>The confirmation password  does not match</p>");
             ;}
     else if(empty($username)){
-            echo("UserName is required");
+            echo("<p>UserName is required</p>");
             ;}
         
         else if(empty($phone)){
-                echo("Phone number is required")
+                echo("<p>Phone number is required</p>")
                 ;}
 
                 else {
@@ -68,7 +68,7 @@ ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_WARNING);
                     $result4 = mysqli_query($conn, $sql4);
             
                     if (mysqli_num_rows($result4) > 0 /* or =1 */) {
-                        echo("Phone number already exists");
+                        echo("<p>Phone number already exists</p>");
                         ;
                     }
                 
@@ -80,7 +80,7 @@ ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_WARNING);
                 $result3 = mysqli_query($conn, $sql3);
         
                 if (mysqli_num_rows($result3) > 0 /* or =1 */) {
-                    echo("UserName already exists");
+                    echo("<p>Username already exists</p>");
                     ;
                 }
        
@@ -93,15 +93,27 @@ ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_WARNING);
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0 /* or =1 */) {
-			echo("Email already exists");
-	        ;
+			echo("<p>Email already exists</p>");
+	        
 		}
         else {
-           $sql2 = "INSERT INTO tbluser (email, password, name, username, phone) VALUES('$signupemail', '$signuppassword', '$name', '$username', '$phone')";
+           $sql2 = "INSERT INTO tbluser (email, password, name, username, phone, Role) VALUES('$signupemail', '$signuppassword', '$name', '$username', '$phone', 'user')";
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
-           	 echo("Your account has been created successfully");
-	         ;
+		
+		
+			 session_start();
+			 $_SESSION['email'] = $signupemail;
+            	$_SESSION['name'] = $name;
+            	
+				$_SESSION['username']= $username;
+				$_SESSION['phone']= $phone;
+				$_SESSION['role']= $Role;
+
+
+					echo("Location: ../html/main.php");
+	
+			 
            }else {
 	           	echo("unknown error occurred");
 		        ;

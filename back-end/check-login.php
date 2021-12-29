@@ -40,8 +40,9 @@ include "db_conn.php";
             	$_SESSION['id'] = $row['user_id'];
 				$_SESSION['username']= $row['username'];
 				$_SESSION['phone']= $row['phone'];
-			
-            	echo("correct Email or password");
+				$_SESSION['role']= $row['Role'];
+				echo("Location: ../html/main.php");
+
 		        exit();
             }
 			}

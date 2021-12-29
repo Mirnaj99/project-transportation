@@ -80,14 +80,14 @@
                           
                                
                 
-                              
+                              <div class="row errormsg">
+                                  <div class="alert alert-danger" role="alert" id="errormsg" style="visibility: hidden;"> </div>
+                                  </div>
                                        
 
                                   <div class="row register-form">
                                   
-                               
                                       <div class="col-md-6">
-                                      <div class="alert alert-danger" role="alert" id="errormsg"> </div>
                                       <form>
                                      
                                       

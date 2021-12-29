@@ -24,8 +24,15 @@ $("#signup").click(function (e) {
       username: username,
     },
   }).done(function (data) {
-   
-    $("#errormsg").html(data); //echo
+  
+    console.log("DATA: " + data);
+    if(data.startsWith("Location: ")){
+      
+      window.location.href = "../html/main.php";
+    } else {
+      document.getElementById("errormsg").style.visibility="visible";
+      $("#errormsg").html(data); //
+    }
     
   });
 });
