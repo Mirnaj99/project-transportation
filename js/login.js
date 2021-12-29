@@ -11,7 +11,17 @@ $("#login").click(function (e) {
     url: "../back-end/check-login.php",
     data: { userpass: userpass, useremail: useremail },
   }).done(function (data) {
-    $("#errormsg").html(data); //echo
+    console.log("DATA: " + data);
+  if(data.startsWith("Location: ")){
+    // url = data.split(" ")[1];
+    // console.log("URL: " + url);
+    document.location.reload();
+    // window.location.replace(url);
+  } else {
+    document.getElementById("errormsg").style.visibility="visible";
+    $("#errormsg").html(data); //
+  }
+	
   });
 });
 })
